@@ -1,0 +1,5 @@
+.header__form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
