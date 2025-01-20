@@ -1,0 +1,136 @@
+/* Основные стили для страницы */
+.information-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Занимает всю высоту экрана */
+  background-color: #FFE7BC; /* Фон страницы */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Контейнер для изображений */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  grid-template-rows: auto auto; /* Два ряда */
+  gap: 20px; /* Расстояние между изображениями */
+  max-width: 1020px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Стили для каждого изображения */
+.image-item {
+  width: 500px; /* Фиксированная ширина */
+  height: 320px; /* Фиксированная высота */
+  object-fit: cover; /* Изображение заполняет область */
+  border-radius: 8px; /* Закруглённые углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: transform 0.2s ease; /* Плавное увеличение при наведении */
+}
+
+.image-item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Третье изображение (в нижнем ряду) */
+.image-item:nth-child(3) {
+  grid-column: span 2; /* Занимает две колонки */
+  width: 1020px; /* Ширина равна двум изображениям + gap */
+  height: 320px; /* Высота остаётся такой же */
+}
+
+/* Модальное окно */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal.open {
+  display: flex; /* Показываем модальное окно */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Затемнение фона */
+}
+
+.modal-content {
+  position: relative;
+  width: 100%; /* Занимает всю ширину экрана */
+  height: 100%; /* Занимает всю высоту экрана */
+  background-color: #FFE7BC; /* Фон модального окна */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  width: 600px; /* Фиксированная ширина */
+  height: 450px; /* Фиксированная высота */
+  background-color: #FFE7BC; /* Фон за пределами картинки */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #ccc; /* Граница для визуализации */
+}
+
+.image-wrapper img {
+  width: 100%; /* Занимает всю ширину контейнера */
+  height: 100%; /* Занимает всю высоту контейнера */
+  object-fit: cover; /* Изображение заполняет контейнер */
+}
+
+/* Кнопка закрытия (крестик) */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+/* Контейнер для кнопок навигации */
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Кнопки "Предыдущая" и "Следующая" */
+.navigation button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.navigation button:hover {
+  background-color: white;
+}

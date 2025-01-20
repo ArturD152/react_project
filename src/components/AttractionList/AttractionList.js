@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Исправленный импорт
 import './AttractionList.css';
 
 const AttractionList = ({ data }) => {
@@ -9,13 +10,16 @@ const AttractionList = ({ data }) => {
   return (
     <div className="grid-column">
       {data.map((item) => (
-        <div key={item.id} className="block" data-category={item.category}>
-          <h2>{item.title}</h2>
-          {/* Используем первую картинку из массива images */}
-          <div className='img_wrap'> 
-          <img src={item.images[0]} alt={item.title} />
-          </div>
+        <Link to={`/attractions/${item.id}`} key={item.id} className="block" data-category={item.category}>
+        <h2>{item.title}</h2>
+        <div className='img_wrap'>
+          {item.images && item.images.length > 0 ? (
+            <img src={item.images[0]} alt={item.title} />
+          ) : (
+            <p>Изображение отсутствует</p>
+          )}
         </div>
+      </Link>
       ))}
     </div>
   );

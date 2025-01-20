@@ -8,6 +8,7 @@ import Attractions from "./pages/Attractions";
 import './styles/App.css'
 import Footer from './components/Footer/Footer.js'
 import UnderFooter from './components/Footer/UnderFooter.js'
+import InformationPage from "./pages/InformationPage.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/attractions" element={<Attractions />} />
+            <Route path="/attractions/:id" element={<InformationPage />} />
           </Routes>
           <Footer />
           </div>

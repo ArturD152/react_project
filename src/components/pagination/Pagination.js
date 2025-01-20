@@ -1,7 +1,7 @@
 import React from 'react';
 import './Pagination.css'
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+const Pagination = ({ totalPages, onPageChange }) => {
     return (
       <div className="pagination__button">
         {Array.from({ length: totalPages }, (_, i) => (
