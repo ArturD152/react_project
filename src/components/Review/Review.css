@@ -1,0 +1,36 @@
+/* Стили для отзыва */
+.review-item {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .review-header button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .review-header button:hover {
+    background-color: #c82333;
+  }
+  
+  .review-item p {
+    margin-bottom: 8px;
+  }
+  
+  .review-item small {
+    color: #666;
+  }
