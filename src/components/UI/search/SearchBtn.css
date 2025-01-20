@@ -1,5 +1,22 @@
-.header__form {
+.section-filter__form {
     display: flex;
     align-items: center;
-    gap: 30px;
+  }
+
+  .section-filter__input {
+    font-size: 16px;
+    height: 40px;
+    width: 400px;
+    border-radius: 7px;
+    border: 3px solid #63BEAF;
+  }
+  @media (max-width: 1024px) {
+    .header__input {
+      max-width: 400px;
+    }
+  }
+  @media (max-width: 960px) {
+    .header__input {
+      max-width: 300px;
+    }
   }

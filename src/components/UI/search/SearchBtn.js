@@ -1,12 +1,26 @@
-import React from "react";
-import './SearchBtn.css'
+import React, { useState } from 'react';
+import './SearchBtn.css';
 
-const SearchBtn = () => {
-    return (
-        <form action="" class="header__form">
-            <input oninput="filterItems()" class="header__input" id="searchInput" type="text" placeholder="Поиск достопримечательности"/>
-        </form>
-    )
-}
+const SearchBtn = ({ onSearch }) => {
+  const [query, setQuery] = useState('');
 
-export default SearchBtn
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setQuery(value);
+    onSearch(value); // Вызываем поиск при каждом изменении input
+  };
+
+  return (
+    <form className="section-filter__form">
+      <input
+        className="section-filter__input"
+        type="text"
+        placeholder="Поиск достопримечательности"
+        value={query}
+        onChange={handleInputChange}
+      />
+    </form>
+  );
+};
+
+export default SearchBtn;
