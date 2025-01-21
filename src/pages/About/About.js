@@ -1,6 +1,6 @@
 import React from "react";
-import longImage from '../components/assets/img/image_long.png'
-import '../styles/About.css'
+import longImage from '../../components/assets/img/image_long.png'
+import './About.css'
 
 const About = () => {
   return (

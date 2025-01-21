@@ -1,0 +1,63 @@
+/* Основные стили для страницы */
+.information-page {
+  min-height: 100vh; /* Занимает всю высоту экрана */
+  background-color: #FFE7BC; /* Фон страницы */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Контейнер для изображений */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  grid-template-rows: auto auto; /* Два ряда */
+  gap: 20px; /* Расстояние между изображениями */
+  max-width: 1020px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Стили для каждого изображения */
+.image-item {
+  width: 500px; /* Фиксированная ширина */
+  height: 320px; /* Фиксированная высота */
+  object-fit: cover; /* Изображение заполняет область */
+  border-radius: 8px; /* Закруглённые углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: transform 0.2s ease; /* Плавное увеличение при наведении */
+}
+
+.image-item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Третье изображение (в нижнем ряду) */
+.image-item:nth-child(3) {
+  grid-column: span 2; /* Занимает две колонки */
+  width: 1020px; /* Ширина равна двум изображениям + gap */
+  height: 320px; /* Высота остаётся такой же */
+}
+
+/* Основные стили */
+.information-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Контейнер для изображений */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.image-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

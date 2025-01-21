@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import FilterBtn from '../components/UI/filter/FilterBtn';
-import SortBtn from '../components/UI/sort/SortBtn';
-import SearchBtn from "../components/UI/search/SearchBtn";
-import AttractionList from "../components/AttractionList/AttractionList";
-import Pagination from "../components/pagination/Pagination";
-import Loader from "../components/loader/Loader";
-import '../styles/Attractions.css';
+import FilterBtn from '../../components/UI/filter/FilterBtn';
+import SortBtn from '../../components/UI/sort/SortBtn';
+import SearchBtn from "../../components/UI/search/SearchBtn";
+import AttractionList from "../../components/AttractionList/AttractionList";
+import Pagination from "../../components/pagination/Pagination";
+import Loader from "../../components/loader/Loader";
+import './Attractions.css';
 
 const Attractions = () => {
   const [data, setData] = useState([]); // Все данные с API

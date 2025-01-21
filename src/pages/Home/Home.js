@@ -1,13 +1,13 @@
 import React, {useState} from "react";
-import walkingImage from "../components/assets/img/walking.webp";
-import '../styles/Home.css'
-import museum1 from '../components/assets/img/museum1.png'
-import museum2 from '../components/assets/img/museum2.jpg'
-import museum3 from '../components/assets/img/museum3.jpg'
-import museum4 from '../components/assets/img/museum4.webp'
-import museum5 from '../components/assets/img/museum5.webp'
-import Theaters from '../components/theaters/Theaters.js'
-import MapSection from '../components/MapSection/MapSection.js'
+import walkingImage from "../../components/assets/img/walking.webp";
+import './Home.css'
+import museum1 from '../../components/assets/img/museum1.png'
+import museum2 from '../../components/assets/img/museum2.jpg'
+import museum3 from '../../components/assets/img/museum3.jpg'
+import museum4 from '../../components/assets/img/museum4.webp'
+import museum5 from '../../components/assets/img/museum5.webp'
+import Theaters from '../../components/theaters/Theaters.js'
+import MapSection from '../../components/MapSection/MapSection.js'
 
 const Home = () => {
 

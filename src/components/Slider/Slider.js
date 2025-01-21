@@ -1,17 +1,22 @@
 import React from "react";
+import "./Slider.css";
 
-const Slider = ({ images, onImageClick }) => {
+const Slider = ({ images, currentIndex, onClose, onNext, onPrev }) => {
   return (
-    <div className="slider">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Изображение ${index + 1}`}
-          className="slider__image"
-          onClick={() => onImageClick(index)} // Передаём индекс изображения
-        />
-      ))}
+    <div className="modal open">
+      <div className="modal-background" onClick={onClose}></div>
+      <div className="modal-content">
+        <div className="image-wrapper">
+          <img src={images[currentIndex]} alt={`Изображение ${currentIndex + 1}`} />
+        </div>
+        <div className="navigation">
+          <button onClick={onPrev}>Предыдущая</button>
+          <button onClick={onNext}>Следующая</button>
+        </div>
+        <span className="close" onClick={onClose}>
+          &times;
+        </span>
+      </div>
     </div>
   );
 };
