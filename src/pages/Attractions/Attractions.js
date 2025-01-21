@@ -42,7 +42,6 @@ const Attractions = () => {
   useEffect(() => {
     let filtered = data;
 
-    // Фильтрация по категории
     if (category !== 'all') {
       filtered = filtered.filter((item) => item.category === category);
     }

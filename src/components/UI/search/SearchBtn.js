@@ -7,7 +7,7 @@ const SearchBtn = ({ onSearch }) => {
   const handleInputChange = (e) => {
     const value = e.target.value;
     setQuery(value);
-    onSearch(value); // Вызываем поиск при каждом изменении input
+    onSearch(value);
   };
 
   return (
