@@ -1,0 +1,101 @@
+.section4 {
+    margin-bottom: 110px;
+  }
+  
+  .section4__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #606060;
+    margin-bottom: 85px;
+    text-align: center;
+  }
+  
+  @media (max-width: 414px) {
+    .section4__title {
+      font-size: 16px;
+      margin-left: 20px;
+    }
+  }
+  
+  .section4__block1-to_img {
+    max-width: 330px;
+    max-height: 483px;
+    cursor: pointer;
+  }
+  
+  .section4__block1__title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  @media (max-width: 414px) {
+    .section4__block1__title {
+      font-size: 16px;
+    }
+  }
+  
+  .section4__block1__text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .section4__block1__addres {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @media (max-width: 414px) {
+    .section4__block1__addres {
+      font-size: 12px;
+    }
+  }
+  
+  .section4__flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 столбца одинаковой ширины */
+    grid-template-rows: repeat(2, auto); /* 2 строки с автоматической высотой */
+    gap: 10px;
+    row-gap: 80px;
+    margin-bottom: 140px;
+  }
+  
+  @media (max-width: 414px) {
+    .section4__flex {
+      grid-template-columns: repeat(2, 1fr); /* 2 столбца на мобильных устройствах */
+      grid-template-rows: repeat(4, auto); /* 4 строки с автоматической высотой */
+      margin-left: 20px;
+      gap: 70px;
+    }
+  }
+  
+  .section4__bottom-btn {
+    background-color: #e38c56;
+    border: 0;
+    color: white;
+    border-radius: 7px;
+    padding: 24px 174px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section4__bottom-btn:hover {
+    background-color: #d67a45;
+  }
+  
+  @media (max-width: 414px) {
+    .section4__bottom-btn {
+      padding: 24px 100px;
+    }
+  }
+  
+  .section4__block__bottom-btn {
+    display: flex;
+    justify-content: center;
+  }

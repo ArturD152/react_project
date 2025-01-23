@@ -1,0 +1,16 @@
+.pagination__button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 141px;
+    padding-bottom: 145px;
+  }
+  .pagination__button button {
+    color: #FFF;
+    font-size: 24px;
+    padding: 17px 25px;
+    background-color: #63BEAF;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+  }
